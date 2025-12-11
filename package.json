@@ -1,18 +1,33 @@
 {
   "name": "sbom-verification",
   "version": "1.0.0",
-  "description": "",
+  "description": "SBOM blockchain registry with CLI tool",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "cli": "node cli/index.js"
   },
-  "keywords": [],
+  "bin": {
+    "sbom-cli": "./cli/index.js"
+  },
+  "keywords": [
+    "sbom",
+    "blockchain",
+    "ethereum",
+    "hardhat"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "ethers": "^6.16.0",
     "hardhat": "^2.27.1"
+  },
+  "dependencies": {
+    "ethers": "^6.16.0",
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2"
   }
 }
