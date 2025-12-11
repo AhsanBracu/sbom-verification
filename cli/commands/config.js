@@ -1,5 +1,6 @@
 const { saveConfig } = require('../utils/contract');
-const { success, info, header, keyValue } = require('../utils/display');
+// const { success, info, header, keyValue } = require('../utils/display');
+const { success, error, info, header, keyValue } = require('../utils/display');
 const readline = require('readline');
 
 /**

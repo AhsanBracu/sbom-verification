@@ -1,6 +1,7 @@
 const { hashSBOM } = require('../utils/hash');
 const { getContractReadOnly } = require('../utils/contract');
-const { header, info, keyValue, displayVerification } = require('../utils/display');
+// const { header, info, keyValue, displayVerification } = require('../utils/display');
+const { header, info, error, keyValue, displayVerification } = require('../utils/display');
 
 /**
  * Verify an SBOM against the blockchain
